@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "siteName": "EVERA WORKS",
+    "defaultTitle": "EVERA WORKS: Equipos expertos que impulsan tus operaciones",
+    "titleTemplate": "%s · EVERA WORKS",
+    "description": "EVERA conecta a empresas globales con equipos expertos y dedicados que asumen las operaciones que necesitas para crecer, desde ventas y atención al cliente hasta back-office especializado."
+  },
+  "nav": {
+    "services": "Servicios",
+    "industries": "Industrias",
+    "about": "Nosotros",
+    "pricing": "Precios",
+    "careers": "Empleos",
+    "contact": "Contacto",
+    "bookCall": "Empieza la Conversación",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "switchToSpanish": "Cambiar a Español",
+    "switchToEnglish": "Switch to English"
+  },
+  "home": {
+    "hero": {
+      "badge": "Equipos dedicados · Cobertura global · A tu horario",
+      "titleLead": "El equipo experto",
+      "titleHighlight": "que tu operación necesita,",
+      "titleTail": "dondequiera que crezcas.",
+      "subtitle": "EVERA te conecta con profesionales dedicados que asumen el trabajo que hace avanzar tu negocio — integrados a tus herramientas, tu horario y tus estándares.",
+      "primaryCta": "Agenda una Llamada",
+      "secondaryCta": "Explora nuestros servicios"
+    },
+    "showcase": {
+      "eyebrow": "Cómo trabajamos",
+      "title": "Un equipo que opera como el tuyo",
+      "subtitle": "Tu equipo dedicado de EVERA se integra a tu flujo de trabajo con reportería clara y responsabilidad real — tú mantienes el control, sin la carga de construirlo por tu cuenta.",
+      "panelTitle": "Operaciones EVERA",
+      "live": "En vivo",
+      "kpis": {
+        "resolution": "Tasa de resolución",
+        "csat": "CSAT",
+        "response": "Respuesta prom.",
+        "agents": "Integrantes"
+      },
+      "chartTitle": "Resueltos esta semana",
+      "agentsTitle": "Estado del equipo",
+      "online": "En línea"
+    },
+    "stats": {
+      "title": "Hecho para cómo trabajas de verdad",
+      "items": {
+        "teams": { "value": "100%", "label": "Dedicado a ti" },
+        "coverage": { "value": "24/7", "label": "Cobertura que tú defines" },
+        "languages": { "value": "Bilingüe", "label": "Inglés y Español" },
+        "quality": { "value": "Experto", "label": "Profesionales verificados" }
+      }
+    },
+    "services": {
+      "eyebrow": "Qué hacemos",
+      "title": "Conecta un equipo para lo que tu negocio necesite",
+      "subtitle": "Profesionales especializados que asumen una función y la operan como una extensión perfecta de tu empresa.",
+      "cta": "Ver todos los servicios"
+    },
+    "whyEvera": {
+      "eyebrow": "Por qué EVERA",
+      "title": "Por qué las empresas eligen a EVERA como socio",
+      "subtitle": "Todo lo que esperas de un equipo interno, entregado como una verdadera extensión del tuyo.",
+      "items": {
+        "ownership": {
+          "title": "Verdadera responsabilidad",
+          "description": "Tu equipo responde por resultados, no solo por tareas — proactivo, comprometido e implicado en tu éxito."
+        },
+        "flexible": {
+          "title": "Cobertura a tu horario",
+          "description": "De día, de noche o todo el día — tu equipo trabaja las horas que tu negocio necesita, en la zona horaria que atiendas."
+        },
+        "bilingual": {
+          "title": "Comunicación sin fricción",
+          "description": "Profesionales bilingües y alineados culturalmente con quienes tus clientes y tu equipo conectan sin esfuerzo."
+        },
+        "integration": {
+          "title": "Se integra a tu stack",
+          "description": "Trabajamos dentro de tus herramientas y procesos, así se siente como contratar interno — sin la carga operativa."
+        },
+        "scalable": {
+          "title": "Escala contigo",
+          "description": "Suma capacidad o levanta nuevas funciones conforme creces, sin ciclos de contratación lentos y costosos."
+        },
+        "quality": {
+          "title": "Talento experto y verificado",
+          "description": "Profesionales rigurosamente seleccionados y capacitados — calidad en la que puedes confiar desde el primer día."
+        }
+      }
+    },
+    "industries": {
+      "eyebrow": "Industrias",
+      "title": "Sectores que atendemos",
+      "subtitle": "Amplia experiencia en las industrias que dependen de equipos ágiles y confiables.",
+      "items": {
+        "healthcare": "Salud",
+        "legal": "Legal",
+        "ecommerce": "E-commerce",
+        "realEstate": "Bienes Raíces",
+        "tech": "Tecnología",
+        "finance": "Finanzas"
+      }
+    },
+    "contactCta": {
+      "eyebrow": "Hablemos",
+      "title": "Construyamos tu equipo",
+      "subtitle": "Cuéntanos qué necesita tu negocio y diseñaremos un equipo dedicado a tu medida.",
+      "cta": "Agenda una Llamada"
+    }
+  },
+  "services": {
+    "meta": {
+      "title": "Servicios",
+      "description": "Equipos dedicados para ventas, atención al cliente, interpretación y back-office especializado — totalmente integrados a tu operación."
+    },
+    "overview": {
+      "eyebrow": "Nuestros servicios",
+      "title": "Equipos dedicados, diseñados a tu medida",
+      "subtitle": "Elige un servicio para ver cómo EVERA asume la función y la opera como parte de tu operación."
+    },
+    "detail": {
+      "painPointsTitle": "Los problemas que resolvemos",
+      "howItWorksTitle": "Cómo funciona",
+      "metricsTitle": "Qué puedes esperar",
+      "ctaTitle": "¿Listo para construir este equipo?",
+      "ctaSubtitle": "Agenda una llamada y diseñaremos un equipo dedicado a tu medida.",
+      "cta": "Agenda una Llamada"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Nosotros",
+      "description": "EVERA WORKS conecta a empresas globales con equipos expertos y dedicados que asumen las operaciones que necesitan para crecer."
+    },
+    "hero": {
+      "eyebrow": "Sobre EVERA WORKS",
+      "title": "Un socio, no un proveedor",
+      "subtitle": "Ayudamos a las empresas a crecer dándoles equipos expertos y dedicados que operan como una extensión perfecta de su negocio."
+    },
+    "mission": {
+      "title": "Nuestra misión",
+      "body": "Permitir que las empresas se enfoquen en lo que mejor hacen, asumiendo las operaciones que las frenan — con equipos que de verdad se preocupan por los resultados."
+    },
+    "vision": {
+      "title": "Nuestra visión",
+      "body": "Ser el socio en el que las empresas globales confían para construir y operar los equipos que impulsan su crecimiento."
+    },
+    "team": {
+      "title": "Las personas detrás de EVERA",
+      "subtitle": "Operadores, reclutadores y líderes de equipo obsesionados con tus resultados."
+    },
+    "trust": {
+      "title": "Por qué confían en nosotros",
+      "security": "Seguridad y confidencialidad por defecto",
+      "integration": "Integración perfecta con tus sistemas",
+      "quality": "Profesionales expertos rigurosamente verificados"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contacto",
+      "description": "Cuéntanos qué necesita tu negocio y diseñaremos un equipo dedicado a tu medida."
+    },
+    "eyebrow": "Contáctanos",
+    "title": "Construyamos tu equipo",
+    "subtitle": "Completa el formulario y nuestro equipo te contactará, con un equipo dedicado listo en tan solo 5 días hábiles.",
+    "form": {
+      "name": "Nombre completo",
+      "namePlaceholder": "Juan Pérez",
+      "email": "Correo de trabajo",
+      "emailPlaceholder": "juan@empresa.com",
+      "company": "Empresa",
+      "companyPlaceholder": "Acme Inc.",
+      "phone": "Teléfono (opcional)",
+      "phonePlaceholder": "+1 (555) 000-0000",
+      "service": "Servicio de interés",
+      "servicePlaceholder": "Selecciona un servicio",
+      "serviceOpen": "Solicitud abierta: describo lo que necesito",
+      "serviceOpenHint": "¿No ves algo que encaje exacto? Elige la opción abierta y cuéntanos lo que necesitas en el mensaje de abajo.",
+      "message": "¿Cómo podemos ayudarte?",
+      "messagePlaceholder": "Cuéntanos sobre tu operación y qué te gustaría mejorar…",
+      "submit": "Enviar mensaje",
+      "submitting": "Enviando…"
+    },
+    "states": {
+      "success": "¡Gracias! Tu mensaje va en camino. Te contactaremos muy pronto.",
+      "error": "Hubo un problema al enviar tu mensaje. Inténtalo de nuevo o escríbenos directamente."
+    },
+    "validation": {
+      "name": "Por favor ingresa tu nombre (al menos 2 caracteres).",
+      "email": "Por favor ingresa un correo válido.",
+      "company": "Por favor ingresa el nombre de tu empresa.",
+      "message": "Por favor añade un mensaje corto (al menos 10 caracteres)."
+    },
+    "info": {
+      "title": "Habla con nosotros directamente",
+      "emailLabel": "Correo",
+      "locationLabel": "Alcance",
+      "location": "Trabajamos con empresas en todo el mundo"
+    },
+    "emailConfirmation": {
+      "subject": "Recibimos tu mensaje",
+      "preheader": "Gracias por contactar a EVERA. Te contactaremos muy pronto.",
+      "heading": "¡Gracias por escribirnos!",
+      "greeting": "Hola {name}:",
+      "body": "Hemos recibido tus datos y nuestro equipo te contactará en breve. Podemos tener tu equipo dedicado listo en tan solo 5 días hábiles. Estás un paso más cerca de construirlo con EVERA.",
+      "summaryTitle": "Esto fue lo que nos enviaste",
+      "nextStepsTitle": "Qué sigue ahora",
+      "nextSteps": "Nuestro equipo revisará tu solicitud y se pondrá en contacto contigo directamente.",
+      "closing": "Nos entusiasma conocer tu negocio y mostrarte cómo EVERA puede ayudarte.",
+      "signature": "El equipo de EVERA",
+      "footerNote": "Recibes este correo porque enviaste una solicitud de contacto en everapartner.com.",
+      "labels": {
+        "name": "Nombre",
+        "email": "Correo",
+        "company": "Empresa",
+        "phone": "Teléfono",
+        "service": "Servicio",
+        "message": "Mensaje"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Equipos expertos y dedicados que operan como una verdadera extensión de tu negocio.",
+    "worldwide": "Trabajamos con empresas en todo el mundo",
+    "columns": {
+      "services": "Servicios",
+      "sitemap": "Mapa del sitio",
+      "company": "Empresa",
+      "legal": "Legal",
+      "contact": "Contáctanos"
+    },
+    "links": {
+      "home": "Inicio",
+      "email": "Correo",
+      "phone": "Teléfono",
+      "about": "Nosotros",
+      "industries": "Industrias",
+      "pricing": "Precios",
+      "careers": "Empleos",
+      "legalNotice": "Aviso Legal",
+      "privacy": "Política de Privacidad",
+      "faq": "FAQ",
+      "terms": "Términos de Servicio"
+    },
+    "rights": "Todos los derechos reservados."
+  },
+  "common": {
+    "learnMore": "Saber más",
+    "comingSoon": "Próximamente",
+    "home": "Inicio"
+  }
+}

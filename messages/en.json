@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "siteName": "EVERA WORKS",
+    "defaultTitle": "EVERA WORKS: Expert teams that power your operations",
+    "titleTemplate": "%s · EVERA WORKS",
+    "description": "EVERA connects global companies with dedicated, expert teams that take ownership of the operations you need to scale, from sales and customer support to specialized back-office."
+  },
+  "nav": {
+    "services": "Services",
+    "industries": "Industries",
+    "about": "About",
+    "pricing": "Pricing",
+    "careers": "Careers",
+    "contact": "Contact",
+    "bookCall": "Start the Conversation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "switchToSpanish": "Cambiar a Español",
+    "switchToEnglish": "Switch to English"
+  },
+  "home": {
+    "hero": {
+      "badge": "Dedicated teams · Global coverage · On your schedule",
+      "titleLead": "The expert team",
+      "titleHighlight": "your operation needs,",
+      "titleTail": "wherever you grow.",
+      "subtitle": "EVERA connects you with dedicated professionals who take ownership of the work that moves your business forward — integrated into your tools, your hours and your standards.",
+      "primaryCta": "Book a Call",
+      "secondaryCta": "Explore our services"
+    },
+    "showcase": {
+      "eyebrow": "How we work",
+      "title": "A team that operates like your own",
+      "subtitle": "Your dedicated EVERA team plugs into your workflow with clear reporting and real accountability — you stay in control, without the overhead of building it yourself.",
+      "panelTitle": "EVERA Operations",
+      "live": "Live",
+      "kpis": {
+        "resolution": "Resolution rate",
+        "csat": "CSAT",
+        "response": "Avg. response",
+        "agents": "Team members"
+      },
+      "chartTitle": "Resolved this week",
+      "agentsTitle": "Team status",
+      "online": "Online"
+    },
+    "stats": {
+      "title": "Built for how you actually work",
+      "items": {
+        "teams": { "value": "100%", "label": "Dedicated to you" },
+        "coverage": { "value": "24/7", "label": "Coverage you define" },
+        "languages": { "value": "Bilingual", "label": "English & Spanish" },
+        "quality": { "value": "Vetted", "label": "Expert professionals" }
+      }
+    },
+    "services": {
+      "eyebrow": "What we do",
+      "title": "Connect a team for whatever your business needs",
+      "subtitle": "Specialized professionals who take ownership of a function and run it as a seamless extension of your company.",
+      "cta": "Explore all services"
+    },
+    "whyEvera": {
+      "eyebrow": "Why EVERA",
+      "title": "Why companies partner with EVERA",
+      "subtitle": "Everything you expect from an in-house team, delivered as a true extension of yours.",
+      "items": {
+        "ownership": {
+          "title": "True ownership",
+          "description": "Your team takes responsibility for outcomes, not just tasks — proactive, accountable and invested in your success."
+        },
+        "flexible": {
+          "title": "Coverage on your schedule",
+          "description": "Daytime, overnight or around the clock — your team works the hours your business needs, in whatever timezone you serve."
+        },
+        "bilingual": {
+          "title": "Seamless communication",
+          "description": "Bilingual, culturally aligned professionals your customers and your team connect with effortlessly."
+        },
+        "integration": {
+          "title": "Plugs into your stack",
+          "description": "We work inside your tools and processes, so it feels like hiring in-house — without the overhead."
+        },
+        "scalable": {
+          "title": "Scales with you",
+          "description": "Add capacity or stand up new functions as you grow, without slow, costly hiring cycles."
+        },
+        "quality": {
+          "title": "Expert, vetted talent",
+          "description": "Rigorously selected and trained professionals — quality you can rely on from day one."
+        }
+      }
+    },
+    "industries": {
+      "eyebrow": "Industries",
+      "title": "Sectors we serve",
+      "subtitle": "Deep experience across the industries that depend on responsive, dependable teams.",
+      "items": {
+        "healthcare": "Healthcare",
+        "legal": "Legal",
+        "ecommerce": "E-commerce",
+        "realEstate": "Real Estate",
+        "tech": "Technology",
+        "finance": "Finance"
+      }
+    },
+    "contactCta": {
+      "eyebrow": "Let's talk",
+      "title": "Let's build your team",
+      "subtitle": "Tell us what your business needs and we'll design a dedicated team around it.",
+      "cta": "Book a Call"
+    }
+  },
+  "services": {
+    "meta": {
+      "title": "Services",
+      "description": "Dedicated teams for sales, customer support, interpretation and specialized back-office — fully integrated with your operation."
+    },
+    "overview": {
+      "eyebrow": "Our services",
+      "title": "Dedicated teams, built around your needs",
+      "subtitle": "Pick a service to see how EVERA takes ownership and runs it as part of your operation."
+    },
+    "detail": {
+      "painPointsTitle": "The problems we solve",
+      "howItWorksTitle": "How it works",
+      "metricsTitle": "What you can expect",
+      "ctaTitle": "Ready to build this team?",
+      "ctaSubtitle": "Book a call and we'll design a dedicated team around your needs.",
+      "cta": "Book a Call"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "About",
+      "description": "EVERA WORKS connects global companies with dedicated, expert teams that take ownership of the operations they need to scale."
+    },
+    "hero": {
+      "eyebrow": "About EVERA WORKS",
+      "title": "A partner, not a vendor",
+      "subtitle": "We help companies grow by giving them dedicated, expert teams that operate as a seamless extension of their business."
+    },
+    "mission": {
+      "title": "Our mission",
+      "body": "To let companies focus on what they do best by taking ownership of the operations that hold them back — with teams that genuinely care about outcomes."
+    },
+    "vision": {
+      "title": "Our vision",
+      "body": "To be the partner global companies trust to build and run the teams that power their growth."
+    },
+    "team": {
+      "title": "The people behind EVERA",
+      "subtitle": "Operators, recruiters and team leads obsessed with your results."
+    },
+    "trust": {
+      "title": "Why companies trust us",
+      "security": "Security and confidentiality by default",
+      "integration": "Seamless integration with your systems",
+      "quality": "Rigorously vetted, expert professionals"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact",
+      "description": "Tell us what your business needs and we'll design a dedicated team around it."
+    },
+    "eyebrow": "Get in touch",
+    "title": "Let's build your team",
+    "subtitle": "Fill out the form and our team will get back to you, with a dedicated team ready in as soon as 5 business days.",
+    "form": {
+      "name": "Full name",
+      "namePlaceholder": "Jane Doe",
+      "email": "Work email",
+      "emailPlaceholder": "jane@company.com",
+      "company": "Company",
+      "companyPlaceholder": "Acme Inc.",
+      "phone": "Phone (optional)",
+      "phonePlaceholder": "+1 (555) 000-0000",
+      "service": "Service of interest",
+      "servicePlaceholder": "Select a service",
+      "serviceOpen": "Open request: I'll describe what I need",
+      "serviceOpenHint": "Don't see an exact fit? Choose the open option and tell us what you need in the message below.",
+      "message": "How can we help?",
+      "messagePlaceholder": "Tell us about your operation and what you'd like to improve…",
+      "submit": "Send message",
+      "submitting": "Sending…"
+    },
+    "states": {
+      "success": "Thanks! Your message is on its way. We'll be in touch with you shortly.",
+      "error": "Something went wrong sending your message. Please try again or email us directly."
+    },
+    "validation": {
+      "name": "Please enter your name (at least 2 characters).",
+      "email": "Please enter a valid email address.",
+      "company": "Please enter your company name.",
+      "message": "Please add a short message (at least 10 characters)."
+    },
+    "info": {
+      "title": "Talk to us directly",
+      "emailLabel": "Email",
+      "locationLabel": "Reach",
+      "location": "Working with companies worldwide"
+    },
+    "emailConfirmation": {
+      "subject": "We received your message",
+      "preheader": "Thanks for contacting EVERA. We'll be in touch with you shortly.",
+      "heading": "Thanks for reaching out!",
+      "greeting": "Hi {name},",
+      "body": "We've received your details and our team will be in touch shortly. We can have your dedicated team ready in as soon as 5 business days. You're one step closer to building it with EVERA.",
+      "summaryTitle": "What you sent us",
+      "nextStepsTitle": "What happens next",
+      "nextSteps": "Our team will review your request and get in touch with you directly.",
+      "closing": "We're excited to learn about your business and show you how EVERA can help.",
+      "signature": "The EVERA Team",
+      "footerNote": "You're receiving this email because you submitted a contact request at everapartner.com.",
+      "labels": {
+        "name": "Name",
+        "email": "Email",
+        "company": "Company",
+        "phone": "Phone",
+        "service": "Service",
+        "message": "Message"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Dedicated, expert teams that operate as a true extension of your business.",
+    "worldwide": "Working with companies worldwide",
+    "columns": {
+      "services": "Services",
+      "sitemap": "Sitemap",
+      "company": "Company",
+      "legal": "Legal",
+      "contact": "Contact Us"
+    },
+    "links": {
+      "home": "Home",
+      "email": "Email",
+      "phone": "Phone",
+      "about": "About",
+      "industries": "Industries",
+      "pricing": "Pricing",
+      "careers": "Careers",
+      "legalNotice": "Legal Notice",
+      "privacy": "Privacy Policy",
+      "faq": "FAQ",
+      "terms": "Terms of Service"
+    },
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "comingSoon": "Coming soon",
+    "home": "Home"
+  }
+}

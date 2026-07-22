@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://evera-works.vercel.app
+
+# Sitemaps
+Sitemap: https://evera-works.vercel.app/sitemap.xml

@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand CSS custom properties (blueprint §7) */
+    --brand-navy: #0b1628;
+    /* Accent = exact EVERA logo-arrow blue */
+    --brand-teal: #00b5d4;
+    --brand-teal-dark: #008fa8;
+    --bg-light: #f8fafc;
+    --surface: #eff4f8;
+
+    /* shadcn semantic tokens — HSL channels (light theme).
+       Base "white" is a soft light grey (never pure #FFF) so large surfaces
+       and elements read softer; text tokens stay full-contrast. */
+    --background: 214 20% 95%; /* #EEF1F5 — page background */
+    --foreground: 217 57% 10%; /* navy */
+
+    --card: 214 22% 97%; /* #F4F7F9 — cards / white elements */
+    --card-foreground: 217 57% 10%;
+
+    --primary: 189 100% 41.6%; /* exact logo blue #00B5D4 */
+    --primary-foreground: 217 57% 10%; /* navy text on blue */
+
+    --secondary: 210 40% 98%;
+    --secondary-foreground: 217 57% 10%;
+
+    --muted: 206 38% 95%;
+    --muted-foreground: 215 16% 47%; /* #64748B */
+
+    --accent: 189 100% 41.6%;
+    --accent-foreground: 217 57% 10%;
+
+    --destructive: 0 84% 60%; /* #EF4444 */
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 160 84% 39%; /* #10B981 */
+    --success-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%; /* #E2E8F0 */
+    --input: 214 32% 91%;
+    --ring: 189 100% 41.6%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  /* Smooth scrolling for in-page anchors (nav/footer → #services, #team…). */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background-color: var(--brand-teal);
+    color: var(--brand-navy);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .container-section {
+    @apply mx-auto w-full max-w-7xl px-6 md:px-12 lg:px-24;
+  }
+  /* Smooth GSAP-friendly base: hidden until animated in (no-JS fallback shows all) */
+  .gsap-fade {
+    opacity: 1;
+  }
+}
+
+/* Hide content for GSAP entrance only when JS is enabled */
+html.js .gsap-fade {
+  opacity: 0;
+}
+
+/* Soft page-enter animation (used by app/[locale]/template.tsx). */
+@media (prefers-reduced-motion: no-preference) {
+  .page-transition {
+    animation: page-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  @keyframes page-in {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
