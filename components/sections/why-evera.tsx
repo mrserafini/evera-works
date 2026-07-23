@@ -32,13 +32,19 @@ export function WhyEvera() {
         aria-hidden="true"
         className="absolute inset-0 -z-10 bg-gradient-to-b from-brand-teal/85 via-brand-teal/50 to-brand-teal/25"
       />
+      {/* Bottom fade to navy — melts the teal photo into the next image section
+          (Contact CTA) so the boundary reads as a smooth gradient, not a split. */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 bottom-0 -z-10 h-44 bg-gradient-to-b from-transparent to-brand-navy"
+      />
 
       <div className="container-section relative z-10 py-20 md:py-28">
         <Reveal>
-          <h2 className="text-4xl font-black uppercase leading-[0.95] tracking-tight text-brand-navy [text-shadow:0_2px_14px_rgba(11,22,40,0.30)] sm:text-6xl lg:text-7xl">
+          <h2 className="text-4xl font-black uppercase leading-[0.95] tracking-tight text-white [text-shadow:0_2px_18px_rgba(11,22,40,0.55)] sm:text-6xl lg:text-7xl">
             {c.eyebrow}
           </h2>
-          <p className="mt-2 text-base font-medium italic text-brand-navy/75 [text-shadow:0_1px_8px_rgba(11,22,40,0.25)] sm:text-lg">
+          <p className="mt-2 text-base font-medium italic text-white/85 [text-shadow:0_1px_10px_rgba(11,22,40,0.5)] sm:text-lg">
             {c.title}
           </p>
         </Reveal>

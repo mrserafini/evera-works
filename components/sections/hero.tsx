@@ -69,7 +69,7 @@ export function Hero() {
   return (
     <section
       ref={root}
-      className="relative isolate flex min-h-screen flex-col justify-end overflow-hidden bg-brand-navy"
+      className="relative isolate flex min-h-screen flex-col justify-center overflow-hidden bg-brand-navy"
     >
       <div className="hero-bg absolute inset-0 -z-20 scale-105">
         <Image
@@ -90,8 +90,14 @@ export function Hero() {
         aria-hidden="true"
         className="absolute inset-0 -z-10 bg-gradient-to-t from-brand-navy/65 via-transparent to-brand-navy/20"
       />
+      {/* Bottom fade to solid navy — dissolves the seam into the next
+          image-backed section (Differentiators) so the screen never looks split. */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 bottom-0 -z-10 h-44 bg-gradient-to-b from-transparent to-brand-navy"
+      />
 
-      <div className="container-section relative z-10 pb-14 pt-40 md:pb-20">
+      <div className="container-section relative z-10 pt-24 pb-14 md:pt-28">
         {/* Headline — smaller now, so "PARTNER." ends before the page center.
             Base is text-4xl so long words never overflow narrow phones. */}
         <h1 className="text-4xl font-black uppercase leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-[5rem]">
