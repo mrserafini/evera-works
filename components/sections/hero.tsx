@@ -81,14 +81,14 @@ export function Hero() {
           className="object-cover object-center"
         />
       </div>
-      {/* Soft, even shade — keeps the image visible but readable. */}
+      {/* Fade filter — same strength as the "Start the Conversation" band. */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-brand-navy/45"
+        className="absolute inset-0 -z-10 bg-gradient-to-br from-brand-teal-dark/40 via-brand-navy/50 to-brand-navy/60 mix-blend-multiply"
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-gradient-to-t from-brand-navy/70 via-transparent to-brand-navy/25"
+        className="absolute inset-0 -z-10 bg-gradient-to-t from-brand-navy/65 via-transparent to-brand-navy/20"
       />
 
       <div className="container-section relative z-10 pb-14 pt-40 md:pb-20">

@@ -26,9 +26,11 @@ export function WhyEvera() {
           className="object-cover object-center"
         />
       </div>
+      {/* Same fade strength as the Hero / "Start the Conversation" bands —
+          lets the plane-over-sea photo show through more than before. */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-gradient-to-b from-brand-teal/92 via-brand-teal/82 to-brand-teal/95"
+        className="absolute inset-0 -z-10 bg-gradient-to-b from-brand-teal/85 via-brand-teal/50 to-brand-teal/25"
       />
 
       <div className="container-section relative z-10 py-20 md:py-28">
