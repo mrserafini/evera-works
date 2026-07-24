@@ -594,7 +594,7 @@ export const faq: Bi<{
     title: "Your Questions, Answered",
     heading: "Your Questions\nAnswered",
     intro:
-      "Clear answers to what clients ask us most — from how we protect your data to how quickly your team can be up and running.",
+      "Clear answers to what clients ask us most, from how we protect your data to how quickly your team can be up and running.",
     items: [
       {
         q: "How do you protect our data and client information?",
@@ -627,7 +627,7 @@ export const faq: Bi<{
     title: "Tus preguntas, respondidas",
     heading: "Tus Preguntas\nRespondidas",
     intro:
-      "Respuestas claras a lo que más nos preguntan los clientes — desde cómo protegemos tus datos hasta qué tan rápido puede estar listo tu equipo.",
+      "Respuestas claras a lo que más nos preguntan los clientes, desde cómo protegemos tus datos hasta qué tan rápido puede estar listo tu equipo.",
     items: [
       {
         q: "¿Cómo protegen nuestros datos y la información de los clientes?",

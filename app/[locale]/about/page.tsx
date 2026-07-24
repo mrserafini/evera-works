@@ -105,11 +105,10 @@ export default function AboutPage({
       </section>
 
       {/* Stats band — mirrors the home coverage band's balanced sizing so a word
-          value ("Multilingual") sits comfortably beside the numeric stats.
-          Subtle dividers keep the three items reading as one designed unit. */}
+          value ("Multilingual") sits comfortably beside the numeric stats. */}
       <section className="bg-surface">
         <div className="container-section py-14 md:py-16">
-          <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-3 sm:gap-y-0 sm:divide-x sm:divide-brand-navy/10">
+          <div className="grid grid-cols-1 gap-10 text-center sm:grid-cols-3">
             {bannerStats.map((item) => (
               <div
                 key={item.label}
