@@ -104,13 +104,18 @@ export default function AboutPage({
         </div>
       </section>
 
-      {/* Stats band — same treatment as the home ImpactStats banner. */}
+      {/* Stats band — mirrors the home coverage band's balanced sizing so a word
+          value ("Multilingual") sits comfortably beside the numeric stats.
+          Subtle dividers keep the three items reading as one designed unit. */}
       <section className="bg-surface">
         <div className="container-section py-14 md:py-16">
-          <div className="grid grid-cols-1 gap-10 text-center sm:grid-cols-3">
+          <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-3 sm:gap-y-0 sm:divide-x sm:divide-brand-navy/10">
             {bannerStats.map((item) => (
-              <div key={item.label}>
-                <div className="text-5xl font-black uppercase leading-none tracking-tight text-brand-navy sm:text-6xl">
+              <div
+                key={item.label}
+                className="flex flex-col items-center justify-center px-6 text-center"
+              >
+                <div className="text-balance text-3xl font-black uppercase leading-tight tracking-tight text-brand-navy lg:text-4xl">
                   {item.value}
                 </div>
                 <div className="mt-3 text-sm font-bold uppercase tracking-widest text-brand-teal-dark">
