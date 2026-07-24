@@ -30,13 +30,6 @@ export function ContactCTA() {
         aria-hidden="true"
         className="absolute inset-0 -z-10 bg-gradient-to-r from-brand-navy/85 via-brand-navy/50 to-brand-navy/20"
       />
-      {/* Top fade from navy — meets WhyEvera's bottom fade so the two image
-          sections blend seamlessly instead of showing a hard divide. */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 top-0 -z-10 h-44 bg-gradient-to-b from-brand-navy to-transparent"
-      />
-
       <div className="container-section relative z-10 py-24 md:py-32">
         <Reveal className="max-w-3xl">
           <h2 className="text-4xl font-black uppercase leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-7xl">

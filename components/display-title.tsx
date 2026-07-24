@@ -42,7 +42,7 @@ export function DisplayTitle({
     <div className={cn(align === "center" ? "text-center" : "text-left", className)}>
       <h2
         className={cn(
-          "text-balance text-4xl font-black uppercase leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl",
+          "whitespace-pre-line text-balance text-4xl font-black uppercase leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl",
           dark ? "text-white" : "text-brand-navy",
         )}
       >

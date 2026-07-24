@@ -3,6 +3,7 @@ import {
   Clock,
   Cpu,
   Globe2,
+  Handshake,
   Languages,
   Lock,
   Scaling,
@@ -23,6 +24,7 @@ const map: Record<string, LucideIcon> = {
   Clock,
   Lock,
   BadgeCheck,
+  Handshake,
 };
 
 export function FeatureIcon({

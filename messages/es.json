@@ -164,8 +164,8 @@
       "description": "Cuéntanos qué necesita tu negocio y diseñaremos un equipo dedicado a tu medida."
     },
     "eyebrow": "Contáctanos",
-    "title": "Construyamos tu equipo",
-    "subtitle": "Completa el formulario y nuestro equipo te contactará, con un equipo dedicado listo en tan solo 5 días hábiles.",
+    "title": "Crece\ncon nosotros",
+    "subtitle": "Completa el formulario y nuestro equipo te contactará para conversar sobre tus necesidades. Podemos tener a tus profesionales dedicados listos en tan solo 5 días hábiles.",
     "form": {
       "name": "Nombre completo",
       "namePlaceholder": "Juan Pérez",
@@ -197,7 +197,7 @@
     "info": {
       "title": "Habla con nosotros directamente",
       "emailLabel": "Correo",
-      "locationLabel": "Alcance",
+      "locationLabel": "Alcance global",
       "location": "Trabajamos con empresas en todo el mundo"
     },
     "emailConfirmation": {

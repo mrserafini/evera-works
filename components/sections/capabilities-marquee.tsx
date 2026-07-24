@@ -7,10 +7,16 @@ import type { Locale } from "@/i18n/routing";
 import { capabilities } from "@/lib/home-content";
 import { gsap, useGSAP } from "@/lib/gsap";
 
-export function CapabilitiesMarquee() {
+export function CapabilitiesMarquee({
+  tone = "navy",
+}: {
+  /** Text color over the teal band. "white" is used on the home page divider. */
+  tone?: "navy" | "white";
+} = {}) {
   const locale = useLocale() as Locale;
   const items = capabilities[locale];
   const track = useRef<HTMLDivElement>(null);
+  const white = tone === "white";
 
   // Duplicate the list so the loop is seamless.
   const sequence = [...items, ...items];
@@ -48,10 +54,16 @@ export function CapabilitiesMarquee() {
       >
         {sequence.map((item, i) => (
           <span key={`${item}-${i}`} className="flex items-center">
-            <span className="px-6 text-lg font-bold uppercase tracking-wide text-brand-navy sm:text-xl">
+            <span
+              className={
+                white
+                  ? "px-6 text-lg font-bold uppercase tracking-wide text-white [text-shadow:0_1px_2px_rgba(11,22,40,0.35)] sm:text-xl"
+                  : "px-6 text-lg font-bold uppercase tracking-wide text-brand-navy sm:text-xl"
+              }
+            >
               {item}
             </span>
-            <span className="text-brand-navy/40">·</span>
+            <span className={white ? "text-white/50" : "text-brand-navy/40"}>·</span>
           </span>
         ))}
       </div>

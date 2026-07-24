@@ -3,10 +3,11 @@ import Image from "next/image";
 import { setRequestLocale } from "next-intl/server";
 
 import type { Locale } from "@/i18n/routing";
-import { stats, team } from "@/lib/home-content";
+import { coverage, stats, team } from "@/lib/home-content";
 import { DisplayTitle } from "@/components/display-title";
 import { Reveal } from "@/components/anim/reveal";
 import { Values } from "@/components/sections/values";
+import { FaqSplit } from "@/components/sections/faq-split";
 
 export function generateMetadata({
   params: { locale },
@@ -26,9 +27,17 @@ export default function AboutPage({
   const c = team[locale as Locale] ?? team.en;
   // Mirror the home ImpactStats banner, but drop the "11+ years" stat — it's
   // already stated in the story paragraph and the big card stat just above.
-  const bannerStats = (stats[locale as Locale] ?? stats.en).filter(
+  const trustStats = (stats[locale as Locale] ?? stats.en).filter(
     (s) => !s.value.includes("11"),
   );
+  // Pull the "Multilingual" item from the home coverage band so the banner
+  // reads as three cards instead of a sparse two.
+  const multilingual = (coverage[locale as Locale] ?? coverage.en).find((i) =>
+    i.value.toLowerCase().includes("multiling"),
+  );
+  const bannerStats = multilingual
+    ? [trustStats[0], multilingual, trustStats[1]]
+    : trustStats;
 
   return (
     <>
@@ -98,7 +107,7 @@ export default function AboutPage({
       {/* Stats band — same treatment as the home ImpactStats banner. */}
       <section className="bg-surface">
         <div className="container-section py-14 md:py-16">
-          <div className="grid grid-cols-1 gap-10 text-center sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-10 text-center sm:grid-cols-3">
             {bannerStats.map((item) => (
               <div key={item.label}>
                 <div className="text-5xl font-black uppercase leading-none tracking-tight text-brand-navy sm:text-6xl">
@@ -114,6 +123,16 @@ export default function AboutPage({
       </section>
 
       <Values />
+
+      <FaqSplit />
+
+      {/* Ultra-thin white rule dividing the About page from the footer —
+          About-only, so the global footer stays untouched elsewhere. */}
+      <div className="bg-brand-navy">
+        <div className="container-section">
+          <div className="h-px w-full bg-white/20" />
+        </div>
+      </div>
     </>
   );
 }

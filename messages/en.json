@@ -164,8 +164,8 @@
       "description": "Tell us what your business needs and we'll design a dedicated team around it."
     },
     "eyebrow": "Get in touch",
-    "title": "Let's build your team",
-    "subtitle": "Fill out the form and our team will get back to you, with a dedicated team ready in as soon as 5 business days.",
+    "title": "Grow\nwith us",
+    "subtitle": "Complete the form, and our team will contact you to discuss your needs. We can have your dedicated professionals ready in as little as 5 business days.",
     "form": {
       "name": "Full name",
       "namePlaceholder": "Jane Doe",
@@ -197,7 +197,7 @@
     "info": {
       "title": "Talk to us directly",
       "emailLabel": "Email",
-      "locationLabel": "Reach",
+      "locationLabel": "Global reach",
       "location": "Working with companies worldwide"
     },
     "emailConfirmation": {

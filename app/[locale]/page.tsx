@@ -6,6 +6,7 @@ import { CoverageBand } from "@/components/sections/coverage-band";
 import { ServicesShowcase } from "@/components/sections/services-showcase";
 import { ImpactStats } from "@/components/sections/impact-stats";
 import { WhyEvera } from "@/components/sections/why-evera";
+import { CapabilitiesMarquee } from "@/components/sections/capabilities-marquee";
 import { ContactCTA } from "@/components/sections/contact-cta";
 
 export default function HomePage({
@@ -22,6 +23,7 @@ export default function HomePage({
       <ServicesShowcase />
       <ImpactStats />
       <WhyEvera />
+      <CapabilitiesMarquee tone="white" />
       <ContactCTA />
     </>
   );

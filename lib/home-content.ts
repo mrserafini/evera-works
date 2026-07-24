@@ -96,9 +96,9 @@ export const differentiators: Bi<{
 }> = {
   en: {
     eyebrow: "How We Work",
-    title: "The right team\nbuilt for you",
+    title: "More than\noutsourcing",
     subtitle:
-      "We bring together the people, capabilities, and systems your business needs to grow.",
+      "We don't just provide talent. We create lasting partnerships through a co-sourcing model that keeps your business agile, connected, and ready to grow.",
     items: [
       {
         icon: "Languages",
@@ -140,9 +140,9 @@ export const differentiators: Bi<{
   },
   es: {
     eyebrow: "Cómo Trabajamos",
-    title: "El equipo ideal\nhecho para ti",
+    title: "Más que\ntercerización",
     subtitle:
-      "Reunimos las personas, capacidades y sistemas que tu negocio necesita para crecer.",
+      "No solo aportamos talento. Creamos alianzas duraderas mediante un modelo de co-sourcing que mantiene tu negocio ágil, conectado y listo para crecer.",
     items: [
       {
         icon: "Languages",
@@ -344,8 +344,8 @@ export const team: Bi<{
 }> = {
   en: {
     eyebrow: "Who we are",
-    title: "Our Team",
-    subtitle: "The people behind EVERA",
+    title: "The people\nbehind EVERA",
+    subtitle: "Driven professionals. Trusted partners.",
     visionLabel: "Our Vision",
     vision:
       "The future belongs to businesses that embrace innovation. Technology never stands still, and neither do we. We believe the future isn't about replacing human value, but empowering the right people with the tools to amplify it.",
@@ -358,8 +358,8 @@ export const team: Bi<{
   },
   es: {
     eyebrow: "Quiénes somos",
-    title: "Nuestro Equipo",
-    subtitle: "Las personas detrás de EVERA",
+    title: "Las personas\ndetrás de EVERA",
+    subtitle: "Profesionales comprometidos. Socios de confianza.",
     visionLabel: "Nuestra Visión",
     vision:
       "El futuro es de las empresas que abrazan la innovación. La tecnología nunca se detiene, y nosotros tampoco. Creemos que el futuro no se trata de reemplazar el valor humano, sino de potenciar a las personas correctas con las herramientas para amplificarlo.",
@@ -496,13 +496,15 @@ export const stats: Bi<{ value: string; label: string }[]> = {
 export const why: Bi<{
   eyebrow: string;
   title: string;
+  subtitle: string;
   items: FeatureItem[];
   assessmentTitle: string;
   assessment: string[];
 }> = {
   en: {
-    eyebrow: "Why EVERA?",
-    title: "What clients can expect",
+    eyebrow: "What clients can expect",
+    title: "Why EVERA?",
+    subtitle: "Discover what makes EVERA a trusted partner.",
     items: [
       {
         icon: "ShieldCheck",
@@ -520,13 +522,13 @@ export const why: Bi<{
         icon: "Lock",
         title: "Data Security",
         description:
-          "We protect your information through secure processes, responsible data handling, and strict international confidentiality standards.",
+          "Your information is handled with care through secure processes, controlled access, and confidentiality practices you can trust.",
       },
       {
-        icon: "BadgeCheck",
-        title: "Compliance",
+        icon: "Handshake",
+        title: "Dedicated Partnership",
         description:
-          "We follow established policies and procedures aligned with industry-specific regulations and requirements to support compliant and responsible operations.",
+          "We become a trusted extension of your business, taking the time to understand your goals and working alongside your team to deliver consistent, measurable success.",
       },
     ],
     assessmentTitle: "Our team runs a strategic assessment of your business to:",
@@ -537,8 +539,9 @@ export const why: Bi<{
     ],
   },
   es: {
-    eyebrow: "¿Por qué EVERA?",
-    title: "Lo que los clientes pueden esperar",
+    eyebrow: "Lo que los clientes pueden esperar",
+    title: "¿Por qué EVERA?",
+    subtitle: "Descubre lo que hace de EVERA un socio de confianza.",
     items: [
       {
         icon: "ShieldCheck",
@@ -556,13 +559,13 @@ export const why: Bi<{
         icon: "Lock",
         title: "Seguridad de Datos",
         description:
-          "Protegemos tu información mediante procesos seguros, un manejo responsable de los datos y estrictos estándares internacionales de confidencialidad.",
+          "Tu información se maneja con cuidado mediante procesos seguros, acceso controlado y prácticas de confidencialidad en las que puedes confiar.",
       },
       {
-        icon: "BadgeCheck",
-        title: "Cumplimiento",
+        icon: "Handshake",
+        title: "Alianza Dedicada",
         description:
-          "Seguimos políticas y procedimientos establecidos, alineados con las regulaciones y requisitos específicos de cada industria, para respaldar operaciones responsables y en cumplimiento.",
+          "Nos convertimos en una extensión de confianza de tu negocio, tomándonos el tiempo para entender tus objetivos y trabajando junto a tu equipo para lograr un éxito consistente y medible.",
       },
     ],
     assessmentTitle: "Nuestro equipo realiza una evaluación estratégica de tu negocio para:",
@@ -580,11 +583,18 @@ export const why: Bi<{
 export const faq: Bi<{
   eyebrow: string;
   title: string;
+  /** Two-line display heading for the split layout (About page). */
+  heading: string;
+  /** Short intro shown beneath the split-layout heading. */
+  intro: string;
   items: { q: string; a: string }[];
 }> = {
   en: {
     eyebrow: "FAQ",
     title: "Your Questions, Answered",
+    heading: "Your Questions\nAnswered",
+    intro:
+      "Clear answers to what clients ask us most — from how we protect your data to how quickly your team can be up and running.",
     items: [
       {
         q: "How do you protect our data and client information?",
@@ -615,6 +625,9 @@ export const faq: Bi<{
   es: {
     eyebrow: "Preguntas frecuentes",
     title: "Tus preguntas, respondidas",
+    heading: "Tus Preguntas\nRespondidas",
+    intro:
+      "Respuestas claras a lo que más nos preguntan los clientes — desde cómo protegemos tus datos hasta qué tan rápido puede estar listo tu equipo.",
     items: [
       {
         q: "¿Cómo protegen nuestros datos y la información de los clientes?",
@@ -662,7 +675,7 @@ export const careers: Bi<{
 }> = {
   en: {
     eyebrow: "Careers",
-    title: "Join our team",
+    title: "Join EVERA",
     text: "Great partnerships begin with great people. We invest in our talent, value every voice, and build meaningful careers supporting clients across North America and Europe.",
     bullets: [
       "Bilingual & multilingual roles",
@@ -676,7 +689,7 @@ export const careers: Bi<{
   },
   es: {
     eyebrow: "Carreras",
-    title: "Únete a nuestro equipo",
+    title: "Únete a EVERA",
     text: "Las grandes alianzas empiezan con grandes personas. Invertimos en nuestro talento, valoramos cada voz y construimos carreras significativas apoyando a clientes en Norteamérica y Europa.",
     bullets: [
       "Roles bilingües y multilingües",
@@ -727,7 +740,7 @@ export const careersPage: Bi<{
   roles: string[];
 }> = {
   en: {
-    title: "Join Our Team",
+    title: "Join EVERA",
     subtitle: "Careers at EVERA",
     intro:
       "Great partnerships begin with great people. Tell us about yourself, upload your CV, and we'll reach out when a role matches your profile.",
@@ -773,7 +786,7 @@ export const careersPage: Bi<{
     ],
   },
   es: {
-    title: "Únete al Equipo",
+    title: "Únete a EVERA",
     subtitle: "Carreras en EVERA",
     intro:
       "Las grandes alianzas empiezan con grandes personas. Cuéntanos de ti, sube tu CV y te contactaremos cuando un rol encaje con tu perfil.",

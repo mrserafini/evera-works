@@ -130,7 +130,7 @@ export function Navbar() {
           <LanguageSwitcher className="text-white/85" />
           <Link
             href="/contact"
-            className="hidden h-10 items-center rounded-full bg-brand-teal px-5 text-sm font-semibold text-brand-navy transition-all hover:-translate-y-0.5 hover:bg-brand-teal-dark hover:text-white lg:inline-flex"
+            className="hidden h-10 items-center rounded-full bg-brand-teal px-5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-brand-teal-dark lg:inline-flex"
           >
             {t("bookCall")}
           </Link>
