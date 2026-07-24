@@ -128,6 +128,13 @@ export default function AboutPage({
 
       <Values />
 
+      {/* Ultra-thin white rule separating Our Values from the FAQ. */}
+      <div className="bg-brand-navy">
+        <div className="container-section">
+          <div className="h-px w-full bg-white/20" />
+        </div>
+      </div>
+
       <FaqSplit />
 
       {/* Ultra-thin white rule dividing the About page from the footer —
