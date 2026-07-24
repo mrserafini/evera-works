@@ -13,7 +13,7 @@ export function Values() {
 
   return (
     <section className="bg-brand-navy">
-      <div className="container-section py-20 md:py-28">
+      <div className="container-section pb-10 pt-20 md:pb-12 md:pt-28">
         <Reveal>
           <DisplayTitle tone="dark" title={c.eyebrow} subtitle={c.title} />
         </Reveal>

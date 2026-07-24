@@ -19,7 +19,7 @@ export function FaqSplit() {
 
   return (
     <section className="bg-brand-navy">
-      <div className="container-section py-20 md:py-28">
+      <div className="container-section pb-20 pt-6 md:pb-28 md:pt-10">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-start lg:gap-16">
           {/* Left — eyebrow, two-line heading, short intro */}
           <Reveal>
