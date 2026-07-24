@@ -730,6 +730,8 @@ export const careersPage: Bi<{
   validation: {
     name: string;
     email: string;
+    /** Typo suggestion; contains a `{suggestion}` placeholder. */
+    emailTypo: string;
     role: string;
     cvRequired: string;
     cvType: string;
@@ -770,6 +772,7 @@ export const careersPage: Bi<{
     validation: {
       name: "Please enter your name (at least 2 characters).",
       email: "Please enter a valid email address.",
+      emailTypo: "Did you mean {suggestion}? Please double-check your email address.",
       role: "Please select an area of interest.",
       cvRequired: "Please attach your CV.",
       cvType: "Only PDF or Word files are accepted.",
@@ -816,6 +819,7 @@ export const careersPage: Bi<{
     validation: {
       name: "Por favor ingresa tu nombre (al menos 2 caracteres).",
       email: "Por favor ingresa un correo válido.",
+      emailTypo: "¿Quisiste decir {suggestion}? Revisa bien tu correo.",
       role: "Por favor selecciona un área de interés.",
       cvRequired: "Por favor adjunta tu CV.",
       cvType: "Solo se aceptan archivos PDF o Word.",

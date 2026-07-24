@@ -191,6 +191,7 @@
     "validation": {
       "name": "Por favor ingresa tu nombre (al menos 2 caracteres).",
       "email": "Por favor ingresa un correo válido.",
+      "emailTypo": "¿Quisiste decir {suggestion}? Revisa bien tu correo.",
       "company": "Por favor ingresa el nombre de tu empresa.",
       "message": "Por favor añade un mensaje corto (al menos 10 caracteres)."
     },

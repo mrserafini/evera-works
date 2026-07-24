@@ -9,6 +9,7 @@ import { CheckCircle2, Loader2, Send } from "lucide-react";
 import type { Locale } from "@/i18n/routing";
 import { homeServices } from "@/lib/home-content";
 import { buildContactSchema, type ContactFormData } from "@/lib/validations";
+import { checkEmail } from "@/lib/email";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -24,6 +25,7 @@ export function ContactForm() {
   const schema = buildContactSchema({
     name: t("validation.name"),
     email: t("validation.email"),
+    emailTypo: (suggestion) => t("validation.emailTypo", { suggestion }),
     company: t("validation.company"),
     message: t("validation.message"),
   });
@@ -32,10 +34,18 @@ export function ContactForm() {
     register,
     handleSubmit,
     reset,
+    watch,
     formState: { errors },
   } = useForm<ContactFormData>({
     resolver: zodResolver(schema),
+    // Validate on blur (and re-check on change) so a bad email is flagged
+    // before the user tries to submit.
+    mode: "onTouched",
   });
+
+  // Live "looks valid" indicator for the email field.
+  const emailValue = watch("email");
+  const emailValid = !!emailValue && checkEmail(emailValue).ok;
 
   const onSubmit = async (data: ContactFormData) => {
     setStatus("loading");
@@ -93,6 +103,9 @@ export function ContactForm() {
           label={t("form.email")}
           placeholder={t("form.emailPlaceholder")}
           error={errors.email?.message}
+          valid={emailValid}
+          inputMode="email"
+          autoComplete="email"
           register={register("email")}
         />
         <Field
@@ -176,6 +189,9 @@ function Field({
   placeholder,
   type = "text",
   error,
+  valid,
+  inputMode,
+  autoComplete,
   register,
 }: {
   id: string;
@@ -183,18 +199,34 @@ function Field({
   placeholder?: string;
   type?: string;
   error?: string;
+  /** When true (and no error), shows a check icon confirming the value looks valid. */
+  valid?: boolean;
+  inputMode?: "email" | "text" | "tel";
+  autoComplete?: string;
   register: ReturnType<ReturnType<typeof useForm>["register"]>;
 }) {
+  const showValid = valid && !error;
   return (
     <div className="space-y-2">
       <Label htmlFor={id}>{label}</Label>
-      <Input
-        id={id}
-        type={type}
-        placeholder={placeholder}
-        aria-invalid={!!error}
-        {...register}
-      />
+      <div className="relative">
+        <Input
+          id={id}
+          type={type}
+          placeholder={placeholder}
+          aria-invalid={!!error}
+          inputMode={inputMode}
+          autoComplete={autoComplete}
+          className={showValid ? "pr-10" : undefined}
+          {...register}
+        />
+        {showValid ? (
+          <CheckCircle2
+            aria-hidden="true"
+            className="pointer-events-none absolute right-3 top-1/2 size-5 -translate-y-1/2 text-success"
+          />
+        ) : null}
+      </div>
       {error ? <p className="text-sm text-destructive">{error}</p> : null}
     </div>
   );

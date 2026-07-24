@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 
 import { sendCareersApplication } from "@/lib/resend";
+import { checkEmail } from "@/lib/email";
 
 const MAX_CV_BYTES = 5 * 1024 * 1024; // 5MB
 const ALLOWED_CV_TYPES = new Set([
@@ -35,11 +36,7 @@ export async function POST(request: Request) {
   const message = str(form.get("message"));
   const cv = form.get("cv");
 
-  if (
-    name.length < 2 ||
-    !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ||
-    !role
-  ) {
+  if (name.length < 2 || !checkEmail(email).ok || !role) {
     return NextResponse.json(
       { success: false, error: "Validation failed" },
       { status: 400 },

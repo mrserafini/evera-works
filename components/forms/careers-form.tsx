@@ -9,6 +9,8 @@ import { CheckCircle2, FileText, Loader2, Send, Upload } from "lucide-react";
 
 import type { Locale } from "@/i18n/routing";
 import { careersPage } from "@/lib/home-content";
+import { emailSchema } from "@/lib/validations";
+import { checkEmail } from "@/lib/email";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -34,7 +36,11 @@ export function CareersForm() {
 
   const schema = z.object({
     name: z.string().min(2, { message: c.validation.name }),
-    email: z.string().email({ message: c.validation.email }),
+    email: emailSchema({
+      invalid: c.validation.email,
+      typo: (suggestion) =>
+        c.validation.emailTypo.replace("{suggestion}", suggestion),
+    }),
     phone: z.string().optional(),
     role: z.string().min(1, { message: c.validation.role }),
     message: z.string().optional(),
@@ -45,8 +51,13 @@ export function CareersForm() {
   const {
     register,
     handleSubmit,
+    watch,
     formState: { errors },
-  } = useForm<FormData>({ resolver: zodResolver(schema) });
+    // Validate on blur (and re-check on change) so a bad email is caught early.
+  } = useForm<FormData>({ resolver: zodResolver(schema), mode: "onTouched" });
+
+  const emailValue = watch("email");
+  const emailValid = !!emailValue && checkEmail(emailValue).ok;
 
   const validateCv = (file: File | null): string | null => {
     if (!file) return c.validation.cvRequired;
@@ -129,13 +140,24 @@ export function CareersForm() {
         </div>
         <div className="space-y-2">
           <Label htmlFor="email">{c.form.email}</Label>
-          <Input
-            id="email"
-            type="email"
-            placeholder={c.form.emailPlaceholder}
-            aria-invalid={!!errors.email}
-            {...register("email")}
-          />
+          <div className="relative">
+            <Input
+              id="email"
+              type="email"
+              inputMode="email"
+              autoComplete="email"
+              placeholder={c.form.emailPlaceholder}
+              aria-invalid={!!errors.email}
+              className={emailValid && !errors.email ? "pr-10" : undefined}
+              {...register("email")}
+            />
+            {emailValid && !errors.email ? (
+              <CheckCircle2
+                aria-hidden="true"
+                className="pointer-events-none absolute right-3 top-1/2 size-5 -translate-y-1/2 text-success"
+              />
+            ) : null}
+          </div>
           {errors.email?.message ? (
             <p className="text-sm text-destructive">{errors.email.message}</p>
           ) : null}

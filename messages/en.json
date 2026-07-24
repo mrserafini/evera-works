@@ -191,6 +191,7 @@
     "validation": {
       "name": "Please enter your name (at least 2 characters).",
       "email": "Please enter a valid email address.",
+      "emailTypo": "Did you mean {suggestion}? Please double-check your email address.",
       "company": "Please enter your company name.",
       "message": "Please add a short message (at least 10 characters)."
     },
