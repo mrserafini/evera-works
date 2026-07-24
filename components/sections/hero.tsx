@@ -90,13 +90,6 @@ export function Hero() {
         aria-hidden="true"
         className="absolute inset-0 -z-10 bg-gradient-to-t from-brand-navy/65 via-transparent to-brand-navy/20"
       />
-      {/* Bottom fade to solid navy — dissolves the seam into the next
-          image-backed section (Differentiators) so the screen never looks split. */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 bottom-0 -z-10 h-44 bg-gradient-to-b from-transparent to-brand-navy"
-      />
-
       <div className="container-section relative z-10 pt-24 pb-14 md:pt-28">
         {/* Headline — smaller now, so "PARTNER." ends before the page center.
             Base is text-4xl so long words never overflow narrow phones. */}

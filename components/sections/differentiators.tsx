@@ -26,12 +26,6 @@ export function Differentiators() {
         />
       </div>
       <div aria-hidden="true" className="absolute inset-0 -z-10 bg-brand-navy/70" />
-      {/* Top fade from solid navy — meets the Hero's matching bottom fade so the
-          two image sections blend instead of showing a hard divide. */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 top-0 -z-10 h-44 bg-gradient-to-b from-brand-navy to-transparent"
-      />
 
       <div className="container-section relative z-10 py-20 md:py-28">
         <Reveal>

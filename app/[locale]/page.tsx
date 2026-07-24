@@ -18,12 +18,12 @@ export default function HomePage({
   return (
     <>
       <Hero />
+      <CapabilitiesMarquee tone="white" />
       <Differentiators />
       <CoverageBand />
       <ServicesShowcase />
       <ImpactStats />
       <WhyEvera />
-      <CapabilitiesMarquee tone="white" />
       <ContactCTA />
     </>
   );
