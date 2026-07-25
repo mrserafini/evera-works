@@ -9,7 +9,8 @@ const apiKey = process.env.RESEND_API_KEY;
 const contactEmail = process.env.CONTACT_EMAIL;
 
 // Absolute base URL for images in emails (mail clients can't load relative paths).
-const siteUrl = (process.env.SITE_URL || "https://evera-works.vercel.app").replace(
+// Falls back to the production domain — never a Vercel preview URL.
+const siteUrl = (process.env.SITE_URL || "https://everaworksbpo.com").replace(
   /\/$/,
   "",
 );
