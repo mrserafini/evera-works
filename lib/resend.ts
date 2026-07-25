@@ -45,7 +45,7 @@ function notificationHtml(data: ContactFormData) {
     ["Company", data.company],
     ["Phone", data.phone || "N/A"],
     ["Service", data.service || "N/A"],
-    ["Message", data.message],
+    ["Message", data.message || "N/A"],
   ];
 
   return `

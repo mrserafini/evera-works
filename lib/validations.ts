@@ -54,7 +54,8 @@ export function buildContactSchema(messages: ContactMessages = DEFAULT_MESSAGES)
     company: z.string().min(1, { message: messages.company }),
     phone: z.string().optional(),
     service: z.string().optional(),
-    message: z.string().min(10, { message: messages.message }),
+    // Optional: the message textarea may be left empty.
+    message: z.string().optional(),
     // Page locale, used to localize the confirmation email. The API falls back
     // to the default locale when absent (kept optional so form input/output
     // types match for react-hook-form).
